@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84890BDF-1A6C-438A-B6D4-52574D057A4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SVGIcon</RootNamespace>
+    <AssemblyName>SVGIcon</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExCSS, Version=4.2.3.0, Culture=neutral, PublicKeyToken=bdbe16be9b936b9a, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExCSS.4.2.3\lib\net48\ExCSS.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Svg, Version=3.4.0.0, Culture=neutral, PublicKeyToken=12a0bac221edeae2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Svg.3.4.7\lib\net472\Svg.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IconBtn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IconBtnTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="svg\add.svg" />
+    <EmbeddedResource Include="svg\arrow_downward_alt.svg" />
+    <EmbeddedResource Include="svg\arrow_upward_alt.svg" />
+    <EmbeddedResource Include="svg\chevron_left.svg" />
+    <EmbeddedResource Include="svg\chevron_right.svg" />
+    <EmbeddedResource Include="svg\delete.svg" />
+    <EmbeddedResource Include="svg\edit.svg" />
+    <EmbeddedResource Include="svg\expand_less.svg" />
+    <EmbeddedResource Include="svg\expand_more.svg" />
+    <EmbeddedResource Include="svg\keyboard_control_key.svg" />
+    <EmbeddedResource Include="svg\menu.svg" />
+    <EmbeddedResource Include="svg\move_down.svg" />
+    <EmbeddedResource Include="svg\move_up.svg" />
+    <EmbeddedResource Include="svg\settings.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="svg\api.svg" />
+    <EmbeddedResource Include="svg\block.svg" />
+    <EmbeddedResource Include="svg\cancel.svg" />
+    <EmbeddedResource Include="svg\chat.svg" />
+    <EmbeddedResource Include="svg\close.svg" />
+    <EmbeddedResource Include="svg\code.svg" />
+    <EmbeddedResource Include="svg\content_copy.svg" />
+    <EmbeddedResource Include="svg\content_paste.svg" />
+    <EmbeddedResource Include="svg\cut.svg" />
+    <EmbeddedResource Include="svg\description.svg" />
+    <EmbeddedResource Include="svg\file_open.svg" />
+    <EmbeddedResource Include="svg\folder.svg" />
+    <EmbeddedResource Include="svg\folder_open.svg" />
+    <EmbeddedResource Include="svg\home.svg" />
+    <EmbeddedResource Include="svg\info.svg" />
+    <EmbeddedResource Include="svg\link.svg" />
+    <EmbeddedResource Include="svg\mail.svg" />
+    <EmbeddedResource Include="svg\save.svg" />
+    <EmbeddedResource Include="svg\search.svg" />
+    <EmbeddedResource Include="svg\send.svg" />
+    <EmbeddedResource Include="svg\star.svg" />
+    <EmbeddedResource Include="svg\warning.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

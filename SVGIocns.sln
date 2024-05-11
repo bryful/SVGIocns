@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SVGIcon", "SVGIcon\SVGIcon.csproj", "{84890BDF-1A6C-438A-B6D4-52574D057A4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SVGIocns", "SVGIcons\SVGIocns.csproj", "{8C0A58D7-5976-4192-AA74-C15BFBB59490}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84890BDF-1A6C-438A-B6D4-52574D057A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84890BDF-1A6C-438A-B6D4-52574D057A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84890BDF-1A6C-438A-B6D4-52574D057A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84890BDF-1A6C-438A-B6D4-52574D057A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C0A58D7-5976-4192-AA74-C15BFBB59490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C0A58D7-5976-4192-AA74-C15BFBB59490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C0A58D7-5976-4192-AA74-C15BFBB59490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C0A58D7-5976-4192-AA74-C15BFBB59490}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB552BE0-4C78-4F02-8FB0-D992508D8A2D}
+	EndGlobalSection
+EndGlobal
