@@ -59,15 +59,5 @@ namespace SVGIcon.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   型 System.Byte[] のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static byte[] add {
-            get {
-                object obj = ResourceManager.GetObject("add", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }

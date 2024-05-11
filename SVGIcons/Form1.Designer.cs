@@ -96,7 +96,7 @@
         false,
         true,
         true};
-			this.iconBtnTable2.Size = new System.Drawing.Size(299, 103);
+			this.iconBtnTable2.Size = new System.Drawing.Size(319, 103);
 			this.iconBtnTable2.TabIndex = 2;
 			this.iconBtnTable2.Text = "iconBtnTable2";
 			// 
