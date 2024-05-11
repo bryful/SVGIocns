@@ -201,6 +201,7 @@ namespace SVGIcon
 			this.Size = new Size(24 * 3, 24);
 			AddBtn(SVG_ICON.add);
 			AddBtn(SVG_ICON.edit);
+			AddBtn(SVG_ICON.close);
 		}
 		public void AddBtn(SVG_ICON idx)
 		{
@@ -216,14 +217,7 @@ namespace SVGIcon
 			};
 			this.Controls.Add(b);
 
-			if(this.Controls.Count > 1 )
-			{
-				for(int i = 0; i < this.Controls.Count; i++)
-				{
-					this.Controls[i].Location = new Point(this.Height * i, 0);
-				}
-			}
-
+			ChkSize();
 		}
 		public void ChkSize()
 		{
@@ -234,6 +228,7 @@ namespace SVGIcon
 					this.Controls[i].Location = new Point(this.Height * i, 0);
 					this.Controls[i].Size = new Size(this.Height, this.Height);
 				}
+				base.Size = new Size(this.Height * this.Controls.Count, this.Height);
 			}
 
 		}
